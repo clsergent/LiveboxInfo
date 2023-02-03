@@ -1,7 +1,7 @@
 # LiveboxInfo
 
 ## Overview
-Get Orange Livebox information from commandline, such as ip, linkstatus, and more.
+Get Orange Livebox information from commandline, such as ip, link status, and more.
 
 Run `python3 liveboxinfo.py --help` without any argument to get a short help.
 
