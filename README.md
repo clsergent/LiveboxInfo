@@ -3,7 +3,7 @@
 ## Overview
 Get Orange Livebox information from commandline, such as ip, link status, and more.
 
-Run `python3 liveboxinfo.py --help` without any argument to get a short help.
+Run `python3 liveboxinfo.py --help` to get a short help.
 
 Livebox credentials must be provided, either from the `credentials` file or using `--credentials` argument, as a tuple `(<login>,<password>)` or a mapping `{login:<login>, password:<password>}`.
 
