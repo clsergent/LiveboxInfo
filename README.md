@@ -17,6 +17,6 @@ The script also relies on the [requests](https://pypi.org/project/requests/) lib
 This repository and its content are licensed under the EUPL-1.2-or-later.
 
 ## Credits
-Requests scheme are based on work published on [forum-orange.com](https://www.forum-orange.com/viewtopic.php?pid=758919) by *shdf*.
+Requests scheme is based on work published on [forum-orange.com](https://www.forum-orange.com/viewtopic.php?pid=758919) by *shdf*.
 
 Orange and Livebox are Orange trademarks.
