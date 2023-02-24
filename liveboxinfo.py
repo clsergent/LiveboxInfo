@@ -36,7 +36,7 @@ class Livebox:
         self.session.headers.update({'Content-Type': 'application/x-sah-ws-4-call+json'})
 
     @staticmethod
-    def decodeCredentials(credentials, *, _limit=2) -> (str | None, str | None):
+    def decodeCredentials(credentials, *, _limit=2) -> (str, str):
         """decode credentials and return (login, password)"""
         try:
             decoded = ast.literal_eval(credentials)
@@ -50,7 +50,7 @@ class Livebox:
                 return decoded
             case str() | pathlib.Path if _limit > 0 and (path := pathlib.Path(decoded)).is_file():
                 with open(path, 'r') as file:
-                    return Livebox.decodeCredentials(file.read(1024), _limit=_limit-1)
+                    return Livebox.decodeCredentials(file.read(10240), _limit=_limit-1)  # limit file size to limit decoding complexity
             case _:
                 log.error('failed to decode credentials')
                 return '', ''
